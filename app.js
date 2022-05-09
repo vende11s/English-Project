@@ -119,7 +119,7 @@ function event(){
         var jd = document.getElementById("input1");
             jd.value = "";
             fails++;
-            document.getElementById("fails").innerHTML="fails: "+fails;
+            document.getElementById("fails").innerHTML="Fails: "+fails;
      },3000);}
 
     if(array.polish.length==0){

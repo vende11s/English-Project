@@ -3,23 +3,27 @@
 <html>
 <head>
 	<title>Nauka do odpowiedzi czy coś takiego</title>
-
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="input.css">
 </head>
 <body>
-
-    <div id="caption">
+    <div id="parent">
+        <div id = "fails">Fails: 0</div>
+        <div id="go-back"><a href="index.html">Main site</a></div>
+        <center><div id="caption"></div></center>
     </div>
-
-
-    <div id = "word"></div>
-    <input type="text" id="input1">
     <br>
-    <div id = "correct"></div>
-    <div id = "fail"></div>
-    <div id = "fails">fails: 0</div>
-    <div id = "done">0/0</div>
-    <br>
-    <a href="index.html">Go back to main site</a>
+    <div id = "word" ></div>
+   <center> <div id="inp">    <div class="form__group field">
+        <input type="input" class="form__field" placeholder="t" name="name" id='input1'autocomplete="off" required />
+        <label for="name" class="form__label">English</label>
+      </div></div></center>
+
+    <div>
+        <div id = "correct"></div>
+        <div id = "fail"></div>
+        <div id = "done">0/0</div>
+    </div>
 
     <script type="text/javascript" src="app.js"></script>
 </body>
