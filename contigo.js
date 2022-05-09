@@ -31,10 +31,24 @@ const database = fetch("https://raw.githubusercontent.com/vende11s/English-Proje
 
 	for(var i = 0; i < a.length-3; i++){
 		if(a[i]=="$" && a[i+1]=="$" && a[i+2]=="$"){
-
+			var buff = "";
+			for(var j = i+3; j < a.length; j++){
+				if(a[j+1]=='\n')break;
+				buff+=a[j];
+			}
+			listOfUnits.push(buff);
 		}
 	}
-	document.getElementById("Unit-choose").innerHTML = a;
+	
+	for(let i = 0; i < listOfUnits.length; i++){
+		output+="<div class = unit>\n";
+		output+="<a href=\"app.html?unit=" + encodeURIComponent(listOfUnits[i])+"\">";
+		output+=listOfUnits[i];
+		output+="</a>";
+		output+="</div>\n";
+	}
+
+	document.getElementById("Unit-choose").innerHTML = output;
   };
 
 ParseAndShow();
