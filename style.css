@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 .unit{
     font-family: Roboto;
     font-weight: 400;
@@ -15,7 +17,6 @@ a:active { text-decoration: none; color: black;}
 
 #caption{
     float:center;
-    width: 300px;
     font-family: Roboto;
     font-weight: 400;
     text-align: center;
@@ -105,4 +106,21 @@ a:active { text-decoration: none; color: black;}
     margin-top: 7%;
     font-size: 30px;
     color:#000;
+}
+
+#parent{
+    border-bottom: 4px 
+}
+
+#line{
+    padding-top: 3%;
+}
+
+#wordlist{
+    float:left;
+    font-family: Roboto;
+    font-weight: 400;
+    text-align: left;
+    font-size: 20px;
+    padding: 1%;
 }
