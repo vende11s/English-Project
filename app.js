@@ -36,15 +36,15 @@ const database = fetch("https://raw.githubusercontent.com/vende11s/English-Proje
 
         if(a[i]=='\n'){
             swap = true;
-            array.polish.push(pol.replace("%"," "));
-            array.english.push(eng.replace("%,"," "));
+            array.polish.push(pol.replace(/%/g," "));
+            array.english.push(eng.replace(/%/g," "));
             pol = "";
             eng = "";
             continue;
         }
         if(a[i]=='\r')continue;
-       if(swap)pol+=a[i];
-       else eng+=a[i];
+       if(swap)eng+=a[i];
+       else pol+=a[i];
     }
 
     console.log(array);
