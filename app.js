@@ -54,7 +54,7 @@ const database = fetch("https://raw.githubusercontent.com/vende11s/English-Proje
   var act = -1;
   const show_random = async () => {
     var random = Math.floor(Math.random() * array.polish.length);
-    console.log("random: ",random);
+    console.log("random: ",random, "ans: ", array.english[random]);
     document.getElementById("word").innerHTML=array.polish[random];
     act = random;
 }
@@ -97,11 +97,11 @@ input.addEventListener("keydown", function (e) {
    event(e);
  }
 });
-
+//pol.replace(/%/g," ")
 var fails = 0;
 function event(){
     var x = document.getElementById("input1").value;
-    if(x.toLowerCase()==array.english[act].toLowerCase()){
+    if(x.toLowerCase().replace(/ /g,"")==array.english[act].toLowerCase().replace(/ /g,"")){
         console.log("correct");
         correct();
         setTimeout(function (){
