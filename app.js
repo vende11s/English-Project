@@ -84,11 +84,11 @@ const correct = async () =>{
 function fail(){
     document.getElementById("fail").innerHTML = "fail!";
     setTimeout(function (){
-        document.getElementById("fail").innerHTML = "the right answer was: " + array.english[act];
+        document.getElementById("fail").innerHTML = "Answer:<br>" + array.english[act];
     },1000);
     setTimeout(function (){
         document.getElementById("fail").innerHTML="";
-    },3000);
+    },5000);
 }
 
 var input = document.getElementById("input1");
@@ -120,7 +120,7 @@ function event(){
             jd.value = "";
             fails++;
             document.getElementById("fails").innerHTML="Fails: "+fails;
-     },3000);}
+     },6000);}
 
     if(array.polish.length==0){
         done();
