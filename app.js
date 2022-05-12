@@ -89,7 +89,7 @@ function fail(){
     },1000);
     setTimeout(function (){
         document.getElementById("fail").innerHTML="";
-    },5000);
+    },5500);
 }
 
 var input = document.getElementById("input1");
@@ -121,7 +121,7 @@ function event(){
             jd.value = "";
             fails++;
             document.getElementById("fails").innerHTML="Fails: "+fails;
-     },6000);}
+     },5500);}
 
     if(array.polish.length==0){
         done();
