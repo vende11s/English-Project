@@ -63,7 +63,7 @@ async function js_is_shit(){
     first_size = array.polish.length;
     document.getElementById("done").innerHTML=how_is_done + "/" + first_size;
     show_random();
-    document.getElementById("wordlist").innerHTML="<a href=\"wordlist.html?unit=" + encodeURIComponent(unit) + "\">wordlist</a>";
+    document.getElementById("wordlist").innerHTML="<a href=\"wordlist.html?unit=" + encodeURIComponent(unit) + "\">Wordlist</a>";
 }
 js_is_shit();
 
