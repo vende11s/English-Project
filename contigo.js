@@ -39,13 +39,16 @@ const database = fetch("https://raw.githubusercontent.com/vende11s/English-Proje
 			listOfUnits.push(buff);
 		}
 	}
-	
+
+	output+="<div id=\"unit-group\">\n";
 	for(let i = 0; i < listOfUnits.length; i++){
-		output+="<div class = unit>\n";
-		output+="<a href=\"app.html?unit=" + encodeURIComponent(listOfUnits[i])+"\">";
+		output+="<a class=\"unit\" href=\"app.html?unit=" + encodeURIComponent(listOfUnits[i])+"\">";
 		output+=listOfUnits[i];
 		output+="</a>";
-		output+="</div>\n";
+		if(i%4==3){
+		output+="</div>\n"
+		output+="<div id=\"unit-group\">\n";
+		}
 	}
 
 	document.getElementById("Unit-choose").innerHTML = output;
