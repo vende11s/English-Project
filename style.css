@@ -168,6 +168,7 @@ a:active { text-decoration: none; color: black;}
 }
 
 #caption1{
+    clear:both;
     font-family: Roboto;
     font-weight: 400;
     text-align: center;
